@@ -7,7 +7,7 @@
 
 # 📞 Iletişim
 
--   Discord: https://t.me/mrexd/
+-   Telegram: https://t.me/mrexd/
 -   Instagram: https://www.instagram.com/mrexdd/
 
 # 📷 Görüntüler
