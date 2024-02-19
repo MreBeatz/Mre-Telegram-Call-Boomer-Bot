@@ -4,13 +4,13 @@ import telebot
 from telebot.types import InlineKeyboardButton as Btn , InlineKeyboardMarkup as Mak
 import time
 
-asa = '6477195227'
+asa = 'Buraya idni yaz'
 gigk = ''.join(random.choice(asa) for _ in range(10))
 
 md5 = hashlib.md5(gigk.encode()).hexdigest()[:16]
 
 
-token = "6746489788:AAH2g1f6ayG7rDB3kZNC062h2EGf6eoRo1M"
+token = "Buraya tokeni yazıcan amk o kadar da zor değil"
 bot = telebot.TeleBot(token)
 
 
@@ -19,13 +19,13 @@ alokt = 0
 @bot.message_handler(commands=['start'])
 def start(message):
     name = message.from_user.first_name
-    bot.reply_to(message, f'''Sevgili {name}, telefon numarası üzerinden yapılan aramalara yönelik spam botuna hoş geldiniz
+    bot.reply_to(message, f'''Sevgili {name}, botu kullanmaya başlamadan önce kanalımıza katılmayı unutmayın. @rimelarsiv
 
  Telefon numarasını gönder
  Ülke koduyla birlikte +
 
  Örnek:
- +905357547867 ''',reply_markup=Mak().add(Btn('darkflesharsiv33',callback_data='click')))
+ +905343217890 ''',reply_markup=Mak().add(Btn('Rimel Arsiv',callback_data='click')))
 
 def call(number):
     global alokt
@@ -59,7 +59,7 @@ telefon numarası : {phonum} ✅
             return text
     else:
         remaining_time = int(60 - (current_time - alokt))
-        return f'Botun tıklanmasını önlemek için lütfen {remaining_time} saniye bekleyin.'
+        return f'Spamı önlemek için {remaining_time} saniye bekleyin.'
 
 @bot.message_handler(content_types=['text'])
 def num(message):
@@ -70,6 +70,6 @@ def num(message):
 @bot.callback_query_handler(func=lambda call: call.data == 'click')
 def all(call):
 	bot.send_message(call.message.chat.id,'''
-Chanal: @darkflesharsiv33 ''')
+Developer'im: @mrexd''')
 
 bot.polling()
