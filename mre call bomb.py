@@ -10,7 +10,7 @@ gigk = ''.join(random.choice(asa) for _ in range(10))
 md5 = hashlib.md5(gigk.encode()).hexdigest()[:16]
 
 
-token = "Buraya tokeni yazıcan amk o kadar da zor değil"
+token = Buraya tokeni yazıcan amk o kadar da zor değil"
 bot = telebot.TeleBot(token)
 
 
@@ -40,7 +40,7 @@ def call(number):
             "Host": "account-asia-south1.truecaller.com",
             "content-type": "application/json; charset=UTF-8",
             "accept-encoding": "gzip",
-            "user-agent": "Truecaller/12.34.8 (Android; 8.1.2)",
+            "user-agent": "Truecaller/12.34.8 (Android; 8.1.2)"
             "clientsecret": "lvc22mp3l1sfv6ujg83rd17btt"
         }
 
